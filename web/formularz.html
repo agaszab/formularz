@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        body{padding:3%; }
+		.content {width: 1000px; margin: auto;}
+        @media only screen and (max-width: 1000px) {.content {width: 500px;}}
+     
+	 
+	 </style>
+
+</head>
+
+<body>
+			
+	<div class="content">
+
+		<h1>Rejestracja</h1>
+
+		<form name="rejestracja" action="#">
+		
+		<!-- IMIĘ -->
+			<div class="form-group">
+				<label>Imię</label>
+				<input type="text" class="form-control" id="imie" placeholder="Wpisz imię">
+			</div>
+
+		<!-- NAZWISKO -->	
+			<div class="form-group">
+				<label>Nazwisko</label>
+				<input type="text" class="form-control" id="nazwisko" placeholder="Wpisz nazwisko">
+			</div>
+			
+		<!-- PŁEĆ -->	
+			<div class="row">
+				<!-- KOLUMNA 1 - opis -->
+				<div class="col-2">
+					<label>Płeć</label>
+				</div>
+				<!-- KOLUMNA 2 - przyciski -->	
+				<div class="col-10">
+					<div class="custom-control custom-radio">
+						<input type="radio" id="customRadio1" name="plec" class="custom-control-input">
+						<label class="custom-control-label" for="customRadio1">Kobieta</label>
+					</div>
+					<div class="custom-control custom-radio">
+						<input type="radio" id="customRadio2" name="plec" class="custom-control-input">
+						<label class="custom-control-label" for="customRadio2">Mężczyzna</label>
+					</div>
+				</div>
+			</div>
+
+				   
+			<!-- MAIL -->	
+			<div class="form-group">
+				<label>Adres e-mail</label>
+				<input type="email" name="e_mail" class="form-control" placeholder="Wpisz adres email">
+			</div>				
+						
+			<!-- HASŁO -->			
+			<div class="form-group">
+				<label>Hasło</label>
+				<input type="password" name="haslo" class="form-control" placeholder="Hasło"><small>min. 8 znaków</small>
+			</div>	
+
+
+			<!-- ADRES - 3 kolumny -->
+			<div class="row">
+				<!-- KOLUMNA 1 - miasto -->	
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Miasto</label>
+						<input type="text" name="miasto" class="form-control">
+					</div>
+				</div>
+				<!-- KOLUMNA 2 - województwo -->	
+				<div class="col-sm-4">
+					<div class="form-group">
+					<label>Województwo</label>
+						<select class="selectpicker form-control" name="wojewodztwo">
+							<option class="disabled">wybierz ...</option>
+							<option>dolnośląskie</option>
+							<option>kujawsko-pomorskie</option>
+							<option>lubelskie</option>
+							<option>lubuskie</option>
+							<option>łódzkie</option>
+							<option>małopolskie</option>
+							<option>mazowieckie</option>
+							<option>opolskie</option>
+							<option>podkarpackie</option>
+							<option>podlaskie</option>
+							<option>pomorskie</option>
+							<option>śląskie</option>
+							<option>świętokrzyskie</option>
+							<option>warmińsko-mazurskie</option>
+							<option>wielkopolskie</option>
+							<option>zachodniopomorskie</option>
+						 </select>
+					</div>
+				</div>
+				<!-- KOLUMNA 3 - kod -->	
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label>Kod pocztowy</label>
+						<input type="text" name="kod" class="form-control">
+					</div>
+				</div>
+			</div> 
+
+			<!-- Regulamin i zgoda -->
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="customCheck1">
+				<label class="custom-control-label" for="customCheck1">Akceptuję <a href="#">regulamin</a> </label>
+			</div>
+			<div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" id="customCheck1">
+				<label class="custom-control-label" for="customCheck1">Wyrażam zgodę na otrzymywanie informacji marketingowych </label>
+			</div>
+
+
+			<!-- Wysłanie formularza -->	
+			<button type="submit" class="btn btn-primary">Rejestruj</button>
+		</form>
+	</div>
+
+</body>
+</html>
